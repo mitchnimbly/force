@@ -299,8 +299,9 @@ type PicklistFieldRequired struct {
 }
 
 type PicklistField struct {
-	Label    string          `xml:"label"`
-	Picklist []PicklistValue `xml:"picklist>picklistValues"`
+	Label              string          `xml:"label"`
+	Picklist           []PicklistValue `xml:"picklist>picklistValues"`
+	RestrictedPicklist bool            `xml:"restricted"`
 }
 
 type BoolFieldRequired struct {
